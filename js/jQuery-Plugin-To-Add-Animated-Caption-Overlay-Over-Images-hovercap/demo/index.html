@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>jQuery hovercap Demos</title>
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/sh/shCore.css">
+<link rel="stylesheet" href="css/sh/shThemeDefault.css">
+
+<script src="js/sh/shCore.js"></script>
+<script src="js/sh/shBrushJScript.js"></script>
+<script src="js/sh/shBrushXml.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery.hovercap.js"></script>
+<script>
+$(function() {
+
+  $('.js--hovercap01').hovercap({
+    toggleElement: '.example__caption'
+  });
+
+  $('.js--hovercap02').hovercap({
+    toggleElement: '.example__caption',
+    toggleAnimataion: 'fade'
+  });
+
+  $('.js--hovercap03').hovercap({
+    toggleElement: '.example__caption',
+    toggleAnimataion: 'slide',
+    toggleDirection: 'toTop'
+  });
+
+  $('.js--hovercap04').hovercap({
+    toggleElement: '.example__caption',
+    toggleAnimataion: 'slide',
+    toggleDirection: 'toRight'
+  });
+
+  $('.js--hovercap05').hovercap({
+    toggleElement: '.example__caption',
+    toggleAnimataion: 'slide',
+    toggleDirection: 'toBottom'
+  });
+
+  $('.js--hovercap06').hovercap({
+    toggleElement: '.example__caption',
+    toggleAnimataion: 'slide',
+    toggleDirection: 'toLeft'
+  });
+
+  SyntaxHighlighter.all();
+});
+</script>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/other/jQuery-Plugin-To-Add-Animated-Caption-Overlay-Over-Images-hovercap.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="page" style="margin-top:150px;">
+
+<h1 class="page__ttl">jQuery hovercap Demos</h1>
+
+<section class="sec">
+<h2 class="sec__hd">Usage</h2>
+<div class="sec__bd">
+
+<div class="sec__code">
+<pre class="brush: html">
+&lt;head&gt;
+...
+&lt;script src="js/jquery.js"&gt;&lt;/script&gt;
+&lt;script src="jquery.hovercap.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+$(function() {
+  $('.target').hovercap({
+    toggleElement: '.target__caption'
+  });
+});
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class="target"&gt;
+&lt;div class="target__image"&gt;&lt;img src="..." alt=""&gt;&lt;/div&gt;
+&lt;div class="target__caption"&gt;Content...&lt;/div&gt;
+&lt;/div&gt;
+
+...
+
+&lt;/body&gt;
+<!-- /.sec__bd --></pre>
+<!-- /.sec__code --></div>
+
+<div class="sec__example">
+
+<div class="example js--hovercap01">
+<div class="example__img"><img src="images/img01.jpg" width="300" height="300" alt=""></div>
+<div class="example__caption">Caption goes here</div>
+<!-- /.exmaple --></div>
+
+<!-- /.sec__example --></div>
+
+<!-- /.sec__bd --></div>
+<!-- /.sec --></section>
+
+<section class="sec">
+<h2 class="sec__hd">Effects Example</h2>
+<div class="sec__bd">
+
+<section class="sec02">
+<h3 class="sec02__hd">Fade</h3>
+<div class="sec02__bd">
+<div class="sec02__code">
+
+<pre class="brush: js">
+$(function() {
+  $('.target').hovercap({
+    toggleElement: '.example__caption',
+    toggleAnimataion: 'fade'
+  });
+});
+</pre>
+
+<!-- /.sec02__code --></div>
+
+<div class="sec02__example">
+<div class="example js--hovercap02">
+<div class="example__img"><img src="images/img02.jpg" width="300" height="300" alt=""></div>
+<div class="example__caption">Caption Fade</div>
+<!-- /.exmaple --></div>
+<!-- /.sec02__example --></div>
+
+<!-- /.sec02__bd --></div>
+<!-- /.sec02 --></section>
+
+<section class="sec02">
+<h3 class="sec02__hd">Slide[direction: toTop]</h3>
+<div class="sec02__bd">
+<div class="sec02__code">
+
+<pre class="brush: js">
+$(function() {
+  $('.target').hovercap({
+    toggleElement: '.example__caption',
+    toggleAnimataion: 'slide',
+    toggleDirection: 'toTop'
+  });
+});
+</pre>
+
+<!-- /.sec02__code --></div>
+
+<div class="sec02__example">
+<div class="example js--hovercap03">
+<div class="example__img"><img src="images/img03.jpg" width="300" height="300" alt=""></div>
+<div class="example__caption">Caption Slide[direction: toTop]</div>
+<!-- /.exmaple --></div>
+<!-- /.sec02__example --></div>
+
+<!-- /.sec02__bd --></div>
+<!-- /.sec02 --></section>
+
+<section class="sec02">
+<h3 class="sec02__hd">Slide[direction: toRight]</h3>
+<div class="sec02__bd">
+<div class="sec02__code">
+
+<pre class="brush: js">
+$(function() {
+  $('.target').hovercap({
+    toggleElement: '.example__caption',
+    toggleAnimataion: 'slide',
+    toggleDirection: 'toRight'
+  });
+});
+</pre>
+
+<!-- /.sec02__code --></div>
+
+<div class="sec02__example">
+<div class="example js--hovercap04">
+<div class="example__img"><img src="images/img04.jpg" width="300" height="300" alt=""></div>
+<div class="example__caption">Caption Slide[direction: toRight]</div>
+<!-- /.exmaple --></div>
+<!-- /.sec02__example --></div>
+
+<!-- /.sec02__bd --></div>
+<!-- /.sec02 --></section>
+
+<section class="sec02">
+<h3 class="sec02__hd">Slide[direction: toBottom]</h3>
+<div class="sec02__bd">
+<div class="sec02__code">
+
+<pre class="brush: js">
+$(function() {
+  $('.target').hovercap({
+    toggleElement: '.example__caption',
+    toggleAnimataion: 'slide',
+    toggleDirection: 'toBottom'
+  });
+});
+</pre>
+
+<!-- /.sec02__code --></div>
+
+<div class="sec02__example">
+<div class="example js--hovercap05">
+<div class="example__img"><img src="images/img05.jpg" width="300" height="300" alt=""></div>
+<div class="example__caption">Caption Slide[direction: toBottom]</div>
+<!-- /.exmaple --></div>
+<!-- /.sec02__example --></div>
+
+<!-- /.sec02__bd --></div>
+<!-- /.sec02 --></section>
+
+<section class="sec02">
+<h3 class="sec02__hd">Slide[direction: toLeft]</h3>
+<div class="sec02__bd">
+<div class="sec02__code">
+
+<pre class="brush: js">
+$(function() {
+  $('.target').hovercap({
+    toggleElement: '.example__caption',
+    toggleAnimataion: 'slide',
+    toggleDirection: 'toLeft'
+  });
+});
+</pre>
+
+<!-- /.sec02__code --></div>
+
+<div class="sec02__example">
+<div class="example js--hovercap06">
+<div class="example__img"><img src="images/img06.jpg" width="300" height="300" alt=""></div>
+<div class="example__caption">Caption Slide[direction: toLeft]</div>
+<!-- /.exmaple --></div>
+<!-- /.sec02__example --></div>
+
+<!-- /.sec02__bd --></div>
+<!-- /.sec02 --></section>
+
+<!-- /.sec__bd --></div>
+<!-- /.sec --></section>
+
+<p class="copy">2014, Sato Daiki.</p>
+
+<!-- /.page --></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
