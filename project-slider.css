@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+
+.pname {
+	font-size: 42px;
+	color: #939598;
+}
+
+.ltn {
+	margin-top: -10px;
+	font-size:18px;
+	color: #939598;
+}
+
+.share-on {
+	
+	font-size: 16px;
+	/*color: #939598; */
+	color: #333333;
+	padding: 5px;
+}
+
+.share:hover {
+	color: #333;
+}
+
+.share1 {
+	margin-top:15px;
+	/*margin-left: 13px;*/
+	color: #939598;
+	font-size: 15px;
+	text-align:center;
+}
+
+.proj-head {
+	color: #939598;
+	text-align:center;
+	FONT-SIZE:22px; 
+}
+	
+.ptext {
+	font-family: "Gotham Light";
+	line-height: 30px;
+ 
+	color: #939598;
+	font-size: 14px;
+	text-align:justify;
+}
+
+.backtoproj {
+	color: #939598;
+}
+
+h6 {
+	color: #939598;
+}
+
+.proj-block {
+	background-color: #f2f2f2;
+	height: 85px;
+	width:250px;
+	/*padding:10px;*/
+	margin: 17px;
+	border-radius: 10px;
+	text-align:center;
+}
+
+.block-head{
+	font-family: "Gotham Light";
+	font-size: 20px;
+	font-weight: bold;
+	color: #939598;
+}
+
+.block-p{
+	font-family: "Gotham Light";
+	font-size:14px;
+	color: #939598;
+}
+
+.share-on {
+	display: inline-block;
+}
+
+.st-custom-button[data-network] {
+  /* background-color: #0adeff;*/
+   display: inline-block;
+/*   padding: 5px 10px;
+   cursor: pointer;
+   font-weight: bold;
+   color: #fff; **/
+}
+
+/****** slider *****/
+
+<!--slider-->
+.jk-slider{
+    width:100%;
+	
+}
+
+.carousel {
+	background:none;
+}
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 6em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+}
+
+ .glyphicon   {
+	 top:45%;
+	font-size: 24px;
+	
+	 
+	
+}
+
+.carousel-indicators li{
+	visibility: hidden;
+}
+
